@@ -1,4 +1,7 @@
-![alt tag](http://i.imgur.com/HKx6acx.png)
+![alt tag](http://i.imgur.com/wKW2xNM.jpg) 
+NEW! Web Version
+![alt tag](http://i.imgur.com/HKx6acx.png) 
+Executable Version
 Steam Library Exporter
 =================
 A lightweight Python-based program that fetches a user's game library from Steam and sorts and exports it to an Excel/Numbers sheet (CSV). Currently it fetches your username, XP level, library, and total playtime for each game. Goal: a quick and easy way to start tackling that backlog of Steam Sale games.
