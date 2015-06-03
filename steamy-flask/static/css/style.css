@@ -13,7 +13,8 @@ color: #FF3300;
 h1 { color:white; font-family:Century Gothic Light; position: absolute; top: 5%; left: 50%; transform: translateX(-50%) translateY(-50%); font-size: 60px}
 h2 { color:white; font-family:Century Gothic Light; position: absolute; top: 70%; left: 50%; transform: translateX(-50%) translateY(-50%);}
 h3 { color:white; font-family:Century Gothic Light; position: absolute; top: 73%; left: 50%; transform: translateX(-50%) translateY(-50%);}
-h4 { color:white; font-family:Century Gothic Light; position: absolute; top: 250%; left: 50%; transform: translateX(-50%) translateY(-50%); font-size: 20px; width: 900px}
+h4 { color:white; font-family:Century Gothic Light; position: absolute; top: 200%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 900px}
+h5 { color:white; font-family:Century Gothic Light; position: absolute; top: 240%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 900px}
 form { color:white; font-family:Century Gothic Light; position: absolute; top: 80%; left: 50%; transform: translateX(-50%) translateY(-50%);}
 
 .header img {
