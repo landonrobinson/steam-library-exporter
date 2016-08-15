@@ -11,18 +11,7 @@ import csv
 
 "------------------------------------- FLASK APP -------------------------------------"
 app = Flask(__name__)
-app.config.update(dict(
-    DEBUG = True,
-    MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = 587,
-    MAIL_USE_TLS = True,
-    MAIL_USE_SSL = False,
-    MAIL_USERNAME = 'steamlibraryexporter@gmail.com',
-    MAIL_PASSWORD = 'toonboy1',
-    MAIL_ASCII_ATTACHMENTS=True
-))
 
-mail = Mail(app)
 @app.route('/')
 def my_form():
     return render_template("my-form.html")
@@ -87,16 +76,6 @@ def my_form_post():
     print "Done. File available now."
     outputFile.close()
 
-    emailReadyGameList = str('\n '.join(exportableGameList))
-    email_subject = "Your Steam Library Exporter Download is Ready!"
-    email_message = "Dear " + processed_text.lower() + ", Attached is your spreadsheet (CSV), built custom by Steam Library Exporter. Happy Gaming!"
-    msg = Message(email_subject,
-                  sender="heads.up.bot@gmail.com",
-                  recipients=[user_email])
-    msg.body = email_message
-    with app.open_resource(csvFileName) as fp:
-        msg.attach(csvFileName, "image/png", fp.read())
-    mail.send(msg)
     return render_template("my-form.html")
 if __name__ == '__main__':
     app.run()
